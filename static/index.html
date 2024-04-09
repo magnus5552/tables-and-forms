@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Форма выбора питомца</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<main>
-    <h1>Найди себе друга!</h1>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+      <!--Форму размещай тут-->
+      <form action="pets/orders" method="POST">
+        <label>
+          Вид питомца:
+          <select name="petType">
+              <option selected value="cat">Котек</option>
+							<option value="dog">Собакен</option>
+							<option value="tiger">Тигер</option>
+          </select>
+        </label>
 
-</main>
-</body>
+        <label>
+          Пол:
+          <select name="gender">
+						<option selected value="boy">Пацан</option>
+						<option value="girl">Пацанелла</option>
+						<option value="none">Гендрфлюидный вертосексуал</option>
+					</select>
+        </label>
+
+        <label>
+          Цвет глаз:
+          <input type="color" name="eyeColor" />
+        </label>
+
+        <label>
+          Длина хвоста:
+          <input type="number" name="tailLength" min="7" max="20" value="7"/>
+        </label>
+
+        <label>
+          Имя питомца:
+          <input type="text" name="name" minlength="3" maxlength="50" />
+        </label>
+
+        
+      </form>
+    </main>
+  </body>
 </html>
