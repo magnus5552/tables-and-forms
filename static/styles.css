@@ -34,3 +34,8 @@ form {
     display: flex;
     flex-direction: column;
 }
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}

@@ -15,18 +15,18 @@
           Вид питомца:
           <select name="petType">
               <option selected value="cat">Котек</option>
-							<option value="dog">Собакен</option>
-							<option value="tiger">Тигер</option>
+              <option value="dog">Собакен</option>
+              <option value="tiger">Тигер</option>
           </select>
         </label>
 
         <label>
           Пол:
           <select name="gender">
-						<option selected value="boy">Пацан</option>
-						<option value="girl">Пацанелла</option>
-						<option value="none">Гендрфлюидный вертосексуал</option>
-					</select>
+            <option selected value="boy">Пацан</option>
+            <option value="girl">Пацанелла</option>
+            <option value="none">Гендрфлюидный вертосексуал</option>
+          </select>
         </label>
 
         <label>
@@ -41,10 +41,31 @@
 
         <label>
           Имя питомца:
-          <input type="text" name="name" minlength="3" maxlength="50" />
+          <input type="text" name="name" minlength="3" maxlength="50" required />
         </label>
 
-        
+        <label>
+          Дата рождения:
+          <input type="date" name="dateOfBirth" required />
+        </label>
+
+        <label>
+          Email:
+          <input type="email" name="email" placeholder="email@example.com" required />
+        </label>
+
+        <label>
+          Телефон:
+          <input type="tel" name="phone" required />
+        </label>
+
+        <label>
+          <input type="checkbox" name="rules" value="true" required />
+          Согласен с правилами
+        </label>
+
+        <input type="submit" value="Отправить" />
+        <input type="reset" />
       </form>
     </main>
   </body>
